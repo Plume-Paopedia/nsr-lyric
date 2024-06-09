@@ -206,3 +206,16 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.navbar .dropdown-menu {
+    background-color: #333;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+    color: white;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #444;
+    color: white;
+}
