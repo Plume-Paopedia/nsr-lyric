@@ -1,0 +1,87 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+.card-deck .card {
+    min-width: 300px;
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+#youtube {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+#youtube h2 {
+    margin-bottom: 1rem;
+}
+
+#youtube p {
+    margin-bottom: 2rem;
+}
+
+#youtube .btn-danger {
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+#youtube .btn-danger:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
