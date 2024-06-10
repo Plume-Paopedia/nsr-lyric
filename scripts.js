@@ -1,4 +1,3 @@
-// scripts.js
 document.addEventListener('DOMContentLoaded', () => {
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -26,5 +25,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 lightbox.remove();
             });
         });
+    });
+
+    // Zoom effect on images
+    document.querySelectorAll('.img-fluid').forEach(img => {
+        img.classList.add('zoom');
+    });
+
+    // Show extra content on button click
+    document.getElementById('loadMoreBtn').addEventListener('click', function() {
+        const extraContent = document.getElementById('extraContent');
+        if (extraContent.style.display === "none") {
+            extraContent.style.display = "block";
+            this.textContent = "Voir moins";
+        } else {
+            extraContent.style.display = "none";
+            this.textContent = "En savoir plus";
+        }
     });
 });
